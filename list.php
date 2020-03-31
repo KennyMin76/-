@@ -6,10 +6,10 @@
 </head>
 <h1 align="center">我的網頁</h1><br>
 <?php
-include("create.php");
+include("Connet.php");
 //$sql = "SELECT * FROM $tb ORDER BY `Time` DESC";
-$sql = "SELECT * FROM $tb";
-$q=mysqli_query($db ,$sql);
+$sql = "SELECT * FROM web";
+$q=mysqli_query($link ,$sql);
 $row = mysqli_fetch_assoc($q);
 ?>
 <body>

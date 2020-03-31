@@ -12,13 +12,13 @@
 <br>
 <?php
 $word=trim($_POST["key"]);
-include("create.php");
+include("Connet.php");
 if(isset($_POST["key"])&&!empty(trim($_POST["key"]))){
 // ini_set('display_errors','1');
 // error_reporting(E_ALL);
 echo "<br>關鍵字：".$word."<br>";
-$sql = "SELECT * FROM $tb ";
-$q=mysqli_query($db ,$sql);
+$sql = "SELECT * FROM web ";
+$q=mysqli_query($link ,$sql);
 $row = mysqli_fetch_assoc($q);
 $cou=0;
 ?>
